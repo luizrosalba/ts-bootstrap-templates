@@ -1,16 +1,21 @@
-import React from 'react';
-
-import NavBar from './common/navBar/NavBar'
+import React from "react"
+import { Routes, Route, Link } from "react-router-dom"
 
 import './App.css';
+import NavBar from './common/navBar/NavBar'
+import Home from "./components/Home/Home";
+import Grid from "./components/Layout/Grid";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar />
-      </header>
-    </div>
+    <>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="grid" element={<Grid />}></Route>
+      {/* <Route path="*" element={<NotFound />}></Route> */}
+    </Routes>
+    </>
   );
 }
 
