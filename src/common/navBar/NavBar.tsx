@@ -15,6 +15,7 @@ const NavBar = () => {
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <NavDropdown title="Layout" id="basic-nav-dropdown">
             <NavDropdown.Item href="grid">Grid</NavDropdown.Item>
+            <NavDropdown.Item href="responsive-grid">Reponsive Grid</NavDropdown.Item>
             <NavDropdown.Item href="stack">Stack</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Components" id="basic-nav-dropdown">
