@@ -5,9 +5,7 @@ const ResponsiveGrid = () =>{
     return (
         <>
             <h1>Grid</h1>
-
             <ResponsiveGridExample />
-
         </>
     )
 }

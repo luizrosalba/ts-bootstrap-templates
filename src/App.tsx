@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from './common/navBar/NavBar'
 import Home from "./components/Home/Home";
 import Grid from "./components/Layout/Grid";
+import Stack from "./components/Layout/Stack";
 import ResponsiveGrid from "./components/Layout/ResponsiveGrid";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<Home />}></Route>
       <Route path="grid" element={<Grid />}></Route>
       <Route path="responsive-grid" element={<ResponsiveGrid />}></Route>
+      <Route path="stack" element={<Stack />}></Route>
       {/* <Route path="*" element={<NotFound />}></Route> */}
     </Routes>
     </>
